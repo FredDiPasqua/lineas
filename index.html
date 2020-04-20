@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Imagination</title>
+</head>
+<body>
+    <header>
+        <p><i class="fas fa-cloud"></i></p>
+        <p><i class="fas fa-cloud"></i></p>
+        <p><i class="fas fa-cloud"></i></p>
+        <h1>Vamos a dibujar</h1>
+        <p><i class="fas fa-cloud"></i></p>
+        <p><i class="fas fa-cloud"></i></p>
+        <p><i class="fas fa-cloud"></i></p>
+    </header>
+    <section id="container">
+        <section>
+            <canvas width=500 height=500 id="canvas"></canvas>
+        </section>
+        <section id="controles">
+            <h3>Instrucciones</h3>
+            <p>Introduce los valores que quieras y crea formas increíbles</p>
+            <form class="form" action="">
+                <div class="inputs">
+                    <p>Color: Escribe el color en ingles.</p>
+                    <input id="color" placeholder="Puedes introducir dos colores separados por una coma." type="text">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <p>Número de lineas</p>
+                    <input id="numlineas" placeholder="De 1 a 300" type="text">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <p>Grosor de las lineas</p>
+                    <input id="grosor" placeholder="entre 1 y 10 " type="text">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <p></p>
+                    <input type="text">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <p></p>
+                    <input type="text">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <p></p>
+                    <input type="text">
+                    <br>
+                </div>
+                <div class="boton">
+                    <button type="button" id="boton">A darle!</button>
+                </div>
+
+            </form>
+        </section>
+
+    </section>
+
+
+
+    <script src="lineas.js"></script>
+    <script src="teclas.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</body>
+</html>

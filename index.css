@@ -1,0 +1,83 @@
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://thumbs.dreamstime.com/b/m%C3%A1rmol-de-marfil-r%C3%BAstico-extracto-beige-natural-del-modelo-la-arena-con-alta-resoluci%C3%B3n-para-decoraci%C3%B3n-exterior-interior-151985438.jpg");
+  filter: sepia(20%);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Pacifico", cursive;
+  background: linear-gradient(#1e96fa, rgba(50, 200, 250, 0.5));
+  color: #ecc838;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+header p {
+  font-size: 20px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+#container #canvas {
+  margin-left: 15%;
+}
+#container #controles {
+  font-family: Georgia;
+  background: rgba(255, 255, 250, 0.2);
+  padding: 10px 20px 0px 20px;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+}
+#container #controles h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #aa8b2c;
+}
+#container #controles p {
+  color: #1e96fa;
+}
+#container #controles .form .inputs {
+  margin: 25px 0;
+}
+#container #controles .form .inputs p {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #aa8b2c;
+}
+#container #controles .form .inputs input {
+  height: 22px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #ecc838;
+  margin-top: 3px;
+}
+#container #controles .form .boton {
+  padding-right: 30px;
+  text-align: end;
+}
+#container #controles .form .boton button {
+  background-color: #1e96fa;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: large;
+  font-family: "Franklin Gothic Medium";
+  color: whitesmoke;
+  width: 80px;
+  height: 30px;
+  border-color: #1e96fa;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

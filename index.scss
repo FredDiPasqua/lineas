@@ -1,0 +1,87 @@
+/* Variables */
+$backcolor: rgb(30, 150, 250);
+$titlecolor: rgb(236, 200, 56);
+$secbackcolor: rgba(50, 200, 250, .5);
+$amarillodos: rgb(170, 139, 44);
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("https://thumbs.dreamstime.com/b/m%C3%A1rmol-de-marfil-r%C3%BAstico-extracto-beige-natural-del-modelo-la-arena-con-alta-resoluci%C3%B3n-para-decoraci%C3%B3n-exterior-interior-151985438.jpg");
+    filter: sepia(20%);
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient( $backcolor, $secbackcolor);
+    color: $titlecolor;
+    margin-bottom: 10px;
+    h1 {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    #canvas {
+        margin-left: 15%;
+    }
+    #controles {
+        font-family: Georgia;
+        background: rgba(255, 255, 250, .2);
+        padding: 10px 20px 0px 20px;
+        text-align: center;
+        width: 80%;
+        border-radius: 10px;
+        h3 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: $amarillodos;
+        }
+        p {
+            color:$backcolor;
+        }
+        .form {
+            .inputs {
+                margin: 25px 0;
+                p {
+                    margin-left: 10px;
+                    font-weight: bold;
+                    color: $amarillodos;
+                }
+                input {
+                    height: 22px;
+                    width: 400px;
+                    border-radius: 10px;
+                    background-color: $titlecolor;
+                    margin-top: 3px;
+                }
+            }
+            .boton {
+                padding-right: 30px;
+                text-align: end;
+                                
+                button {
+                    background-color: $backcolor;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    font-size: large;
+                    font-family: 'Franklin Gothic Medium';
+                    color: whitesmoke;
+                    width: 80px;
+                    height: 30px;    
+                    border-color: $backcolor;
+                    margin-bottom: 10px;
+
+                }    
+            }
+        }
+    }
+}
