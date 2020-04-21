@@ -26,8 +26,8 @@
             <p>Introduce los valores que quieras y crea formas increíbles</p>
             <form class="form" action="">
                 <div class="inputs">
-                    <p>Color: Escribe el color en ingles.</p>
-                    <input id="color" placeholder="Puedes introducir dos colores separados por una coma." type="text">
+                    <p>Da click y elige cualquier color</p>
+                    <input id="color" type="color" value="#F0CE50">
                     <br>
                 </div>
                 <div class="inputs">
@@ -41,21 +41,28 @@
                     <br>
                 </div>
                 <div class="inputs">
-                    <p></p>
-                    <input type="text">
+                    <p  class="indobles">X inicial</p>
+                    <p  class="indobles var">Y inicial</p>
+                    <input id="xinicial" style="width:200px" placeholder="# < lineas" type="text">
+                    <input id="yinicial" style="width:200px" placeholder="# < lineas" type="text">
                     <br>
                 </div>
                 <div class="inputs">
-                    <p></p>
-                    <input type="text">
+                    <p class="indobles">X final</p>
+                    <p class="indobles var">Y final</p>
+                    <input id="xfinal" style="width:200px" placeholder="Experimenta" type="text">
+                    <input id="yfinal" style="width:200px" placeholder="Experimenta" type="text">
                     <br>
                 </div>
                 <div class="inputs">
-                    <p></p>
-                    <input type="text">
+                    <p class="indobles">Flotante Inicial</p>
+                    <p class="indobles var">Flotante Final</p>
+                    <input id="iniflotante" style="width:200px" placeholder="Recomendado 0 o 500" type="text">
+                    <input id="finflotante" style="width:200px" placeholder="Recomendado 0 o 500" type="text">
                     <br>
                 </div>
                 <div class="boton">
+                    <button type="button" id="botonclear">Clear</button>
                     <button type="button" id="boton">A darle!</button>
                 </div>
 

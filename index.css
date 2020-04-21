@@ -31,6 +31,8 @@ header p {
 }
 #container #canvas {
   margin-left: 15%;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwhimYyW0sE27B6i-h-j01x6-8yaKBDjCV0zdw5p_keHdMpsVN&usqp=CAU);
+  opacity: 80%;
 }
 #container #controles {
   font-family: Georgia;
@@ -49,12 +51,21 @@ header p {
   color: #1e96fa;
 }
 #container #controles .form .inputs {
-  margin: 25px 0;
+  margin: 15px 0;
 }
 #container #controles .form .inputs p {
   margin-left: 10px;
   font-weight: bold;
   color: #aa8b2c;
+}
+#container #controles .form .inputs .indobles {
+  display: inline-flex;
+  width: 200px;
+  justify-content: center;
+  position: relative;
+}
+#container #controles .form .inputs .var {
+  left: -10px;
 }
 #container #controles .form .inputs input {
   height: 22px;
@@ -62,10 +73,12 @@ header p {
   border-radius: 10px;
   background-color: #ecc838;
   margin-top: 3px;
+  text-align: center;
 }
 #container #controles .form .boton {
-  padding-right: 30px;
-  text-align: end;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 #container #controles .form .boton button {
   background-color: #1e96fa;
