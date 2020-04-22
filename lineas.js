@@ -6,6 +6,26 @@ btnclear.addEventListener("click", cleardibujo);
 var grueso = document.getElementById("grosor");
 var lie = document.getElementById("canvas");
 var lienzo = lie.getContext("2d");
+// document.addEventListener("keyup", teclaspressed);
+
+// function teclaspressed (teclas) {  // enter=13 delete=8 space=32
+//     var teclas = {
+//         ENTER = 13,
+//         BACKSPACE = 8,
+//         SPACE = 32 
+//     }
+//     switch (teclas.keycode) {
+//         case teclas.ENTER:
+//             dibujoPorClick();
+//         break;
+//         case teclas.BACKSPACE:
+//             cleardibujo ();
+//         break;
+//         // case teclas.SPACE:
+//         //     savedibujo ();
+//         // break;
+//     }
+// }
 
 function cleardibujo (){
     lienzo.clearRect(0, 0, 500, 500);

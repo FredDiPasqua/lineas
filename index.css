@@ -28,18 +28,23 @@ header p {
 #container {
   display: grid;
   grid-template-columns: 60% 1fr;
+  grid-template-areas: "canvas controles";
 }
-#container #canvas {
+#container .canvassec {
+  grid-area: canvas;
+}
+#container .canvassec #canvas {
   margin-left: 15%;
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTwhimYyW0sE27B6i-h-j01x6-8yaKBDjCV0zdw5p_keHdMpsVN&usqp=CAU);
+  background-color: rgba(255, 255, 255, 0.4);
   opacity: 80%;
 }
 #container #controles {
+  grid-area: controles;
   font-family: Georgia;
   background: rgba(255, 255, 250, 0.2);
   padding: 10px 20px 0px 20px;
   text-align: center;
-  width: 80%;
+  width: 450px;
   border-radius: 10px;
 }
 #container #controles h3 {
@@ -91,6 +96,65 @@ header p {
   height: 30px;
   border-color: #1e96fa;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "controles" "canvas";
+  }
+  #container #controles {
+    width: 500px;
+    justify-self: center;
+    margin-bottom: 20px;
+  }
+  #container .canvassec {
+    border-top: 2px dashed rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  #container .canvassec #canvas {
+    margin: 20px 18%;
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: xx-large;
+  }
+
+  #container #controles {
+    padding: 0;
+  }
+  #container .canvassec {
+    text-align: center;
+  }
+  #container .canvassec #canvas {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  #controles {
+    width: 100%;
+  }
+
+  #canvas {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
