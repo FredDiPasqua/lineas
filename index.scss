@@ -38,17 +38,18 @@ header {
             margin-right: 20px;
             padding: 10px;
             position: relative;
-            top: 30px;
+            top: 25px;
             // background: rgba(180, 180, 255, .4);
             border-radius: 10px;
             .memories {
                 margin: 15px 0;
                 .btnsketch {
                     width:60px;
-                    height: 30px;
-                    font-family: fantasy;
+                    height: 35px;
+                    font-family: Georgia;;
                     border-radius: 8px;
-                    opacity: 90%;
+                    opacity: 85%;
+                    border-color: wheat;
                 }
             }
         }
@@ -142,7 +143,7 @@ header {
             border-top: 2px dashed rgba(0, 0, 0, .4);
             text-align: center;
             #canvas {
-                margin: 20px 18%;
+                margin: 20px auto 20px 10%;
             }
         }
     }
@@ -171,6 +172,11 @@ header {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    #memorias {
+        display: inline-flex;
+    }
+}
 @media screen and (max-width: 500px) {
     body {
         width: 100%;
@@ -178,8 +184,11 @@ header {
     header {
         width: 100%;
     }
-    #controles {
+    #container {
         width: 100%;
+    }
+    #controles {
+        width: auto;
     }
     #canvas {
         width: 100%;
