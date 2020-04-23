@@ -126,6 +126,35 @@ header {
         }
     }
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    // width: 85.15%;
+    background: linear-gradient(90deg, rgb(0, 0, 180), $backcolor);
+    margin-bottom: 0;
+    padding: 8px 100px;
+    margin-top: 20px;
+    position: relative;
+    top: 2.3vh;
+    // text-align: end;
+    audio {
+        margin-left: 20px;
+        height: 20px;
+        width: 500px;
+        opacity: 30%;
+    }
+    audio:hover {
+        opacity: 60%;
+    }
+    p {
+        strong {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1200px) {
     #container {
@@ -145,6 +174,15 @@ header {
             #canvas {
                 margin: 20px auto 20px 10%;
             }
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    footer {
+        padding-left: 5px;
+        padding-right: 15px;
+        audio {
+            margin-left: 10px;
         }
     }
 }
@@ -171,6 +209,14 @@ header {
 
         }
     }
+    footer{
+        display:block;
+        text-align: center;
+        p {
+            margin-top: 20px;
+            font-size: larger;
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     #memorias {
@@ -185,13 +231,30 @@ header {
         width: 100%;
     }
     #container {
-        width: 100%;
-    }
-    #controles {
-        width: auto;
+        width: 400px;
+        .canvassec {
+            height: auto;
+            .memories {
+                .btnsketch {
+                }
+            }
+        }
+        #controles {
+            position: relative;
+            left:40px;
+            width: auto;
+            justify-content: center;
+        }
     }
     #canvas {
+        position: relative;
+        left: 40px;
         width: 100%;
         height: auto;
+    }
+    footer {
+        audio {
+            width: 400px;
+        }
     }
 }

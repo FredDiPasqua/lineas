@@ -117,6 +117,30 @@ header p {
   margin-bottom: 10px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0000b4, #1e96fa);
+  margin-bottom: 0;
+  padding: 8px 100px;
+  margin-top: 20px;
+  position: relative;
+  top: 2.3vh;
+}
+footer audio {
+  margin-left: 20px;
+  height: 20px;
+  width: 500px;
+  opacity: 30%;
+}
+footer audio:hover {
+  opacity: 60%;
+}
+footer p strong a {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 1200px) {
   #container {
     display: grid;
@@ -135,6 +159,15 @@ header p {
   }
   #container .canvassec #canvas {
     margin: 20px auto 20px 10%;
+  }
+}
+@media screen and (max-width: 950px) {
+  footer {
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  footer audio {
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -156,6 +189,15 @@ header p {
     margin-left: 0;
     margin-right: 0;
   }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer p {
+    margin-top: 20px;
+    font-size: larger;
+  }
 }
 @media screen and (max-width: 600px) {
   #memorias {
@@ -172,16 +214,27 @@ header p {
   }
 
   #container {
-    width: 100%;
+    width: 400px;
   }
-
-  #controles {
+  #container .canvassec {
+    height: auto;
+  }
+  #container #controles {
+    position: relative;
+    left: 40px;
     width: auto;
+    justify-content: center;
   }
 
   #canvas {
+    position: relative;
+    left: 40px;
     width: 100%;
     height: auto;
+  }
+
+  footer audio {
+    width: 400px;
   }
 }
 

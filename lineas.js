@@ -117,8 +117,13 @@ function dibujarlinea(color, xi, yi, xf, yf) {
         lienzo.stroke();
         lienzo.closePath();
 }
+var inicio = 0;
         
 function dibujoPorClick () {
+    while ( inicio == 0) {
+        alert("Hey! Puedes guardar hasta 9 bocetos con las teclas de la 'A' a la 'L'.")
+        inicio++;
+    }
     var lineas = parseInt(txtlineas.value);
     var colorcito = document.getElementById("color").value;
     var espacio = 500 / lineas;
@@ -165,9 +170,11 @@ var init7 = 0;
 var init8 = 0;
 var init9 = 0;
 /* aun no funciona */
-var sketchbtn1 = document.getElementById("buttonsketch1");
-sketchbtn1.addEventListener("click", drawsaved(save1)) ;
+// var sketchbtn1 = document.getElementById("buttonsketch1");
+// sketchbtn1.addEventListener("click", drawsaved(save1)) ;
+// console.log(sketchbtn1);
 /* Aun no funciona */
+// btnsketch1.addEventListener("click", drawsaved(save1));
 
 function savedibujo (cond) {
     document.getElementById("memorias").style.background = "rgba(180, 180, 255, .4)";
@@ -195,7 +202,9 @@ function savedibujo (cond) {
             btnsketch1.style.background = save1.par1;
             document.getElementById("sketch1").appendChild(btnsketch1);
             init1++;
+            console.log(btnsketch1);
         }
+        document.getElementById("buttonsketch1").style.background = save1.par1;
     }
     if (cond == "S") {
         save2 = {
@@ -222,6 +231,7 @@ function savedibujo (cond) {
             document.getElementById("sketch2").appendChild(btnsketch2);
             init2++;
         }
+        document.getElementById("buttonsketch2").style.background = save2.par1;
     }
     if (cond == "D") {
         save3 = {
@@ -248,6 +258,7 @@ function savedibujo (cond) {
             document.getElementById("sketch3").appendChild(btnsketch3);
             init3++;
         }
+        document.getElementById("buttonsketch3").style.background = save3.par1;
     }
     if (cond == "F") {
         save4 = {
@@ -274,6 +285,7 @@ function savedibujo (cond) {
             document.getElementById("sketch4").appendChild(btnsketch4);
             init4++;
         }
+        document.getElementById("buttonsketch4").style.background = save4.par1;
     }
     if (cond == "G") {
         save5 = {
@@ -300,6 +312,7 @@ function savedibujo (cond) {
             document.getElementById("sketch5").appendChild(btnsketch5);
             init5++;
         }
+        document.getElementById("buttonsketch5").style.background = save5.par1;
     }
     if (cond == "H") {
         save6 = {
@@ -326,6 +339,7 @@ function savedibujo (cond) {
             document.getElementById("sketch6").appendChild(btnsketch6);
             init++;
         }
+        document.getElementById("buttonsketch6").style.background = save6.par1;
     }
     if (cond == "J") {
         save7 = {
@@ -352,6 +366,7 @@ function savedibujo (cond) {
             document.getElementById("sketch7").appendChild(btnsketch7);
             init7++;
         }
+        document.getElementById("buttonsketch7").style.background = save7.par1;
     }
     if (cond == "K") {
         save8 = {
@@ -378,6 +393,7 @@ function savedibujo (cond) {
             document.getElementById("sketch8").appendChild(btnsketch8);
             init8++;
         }
+        document.getElementById("buttonsketch8").style.background = save8.par1;
     }
     if (cond == "L") {
         save9 = {
@@ -404,6 +420,7 @@ function savedibujo (cond) {
             document.getElementById("sketch9").appendChild(btnsketch9);
             init9++;
         }
+        document.getElementById("buttonsketch9").style.background = save9.par1;
     }
 }
 
